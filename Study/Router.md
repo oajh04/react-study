@@ -24,6 +24,8 @@ path 이후의 ? 다음에 나오는 'page=3' 같은 것들을 query string 이�
 
 
 
+### Router 사용하기
+
 라우터를 쓰기 위해서는 react-router-dom을 설치해야한다.
 
 ```react
@@ -55,15 +57,12 @@ src 디렉토리 안으로 component 라는 디렉토를 만든 후 home.js 와 
 
 import React, { Component } from 'react';
 
-class home extends Component {
-
-  render() {
+const home = () => {
     return (
         <div>
             <h3> This is Junho's study </h3>
         </div>
     );
-  }
 }
 
 export default home;
@@ -78,18 +77,15 @@ test.js
 
 import React, { Component } from 'react';
 
-class home extends Component {
-
-  render() {
+const test = () => {
     return (
         <div>
             <h3> This is test page </h3>
         </div>
     );
-  }
 }
 
-export default home;
+export default test;
 ```
 
 
@@ -167,7 +163,7 @@ This is Junho's study 밑에 This is test page 가 추가로 뜰것이다
 
 
 
-이러한 중복을 막기 위해서 home.js route가 설정된 태그에 다음과 같은 코드를 추가한다.
+이러한 중복을 막기 위해서 home.js route가 설정된 태그에 다음과 같은 코드로 바꾼다.
 
 ```react
 /* src/App.js */
