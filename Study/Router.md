@@ -44,20 +44,20 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 
 
-src 디렉토리 안으로 component 라는 디렉토를 만든 후 home.js 와 test.js 를 생성한다.
+src 디렉토리 안으로 component 라는 디렉토를 만든 후 Home.js 와 Test.js 를 생성한다.
 
-그런 후 home.js 와 test.js 에 각각의 코드를 추가로 입력한다.
+그 후 Home.js 와 Test.js 에 각각의 코드를 추가로 입력한다.
 
 
 
-+ home.js
++ Home.js
 
 ```react
-/* src/component/home.js */
+/* src/component/Home.js */
 
 import React from 'react';
 
-const home = () => {
+const Home = () => {
     return (
         <div>
             <h3> This is Junho's study </h3>
@@ -65,7 +65,7 @@ const home = () => {
     );
 }
 
-export default home;
+export default Home;
 ```
 
 
@@ -73,11 +73,11 @@ export default home;
 test.js
 
 ```react
-/* src/component/test.js */
+/* src/component/Test.js */
 
 import React from 'react';
 
-const test = () => {
+const Test = () => {
     return (
         <div>
             <h3> This is test page </h3>
@@ -85,7 +85,7 @@ const test = () => {
     );
 }
 
-export default test;
+export default Test;
 ```
 
 
@@ -98,8 +98,8 @@ import React from 'react';
 import './App.css';
 import { BrowerRouter, Route} from 'react-router-dom';
 
-import Home from './inc/home.js';
-import Test from './inc/test.js';
+import Home from './component/Home.js';
+import Test from './component/Test.js';
 
 class App extends Component{
     constructor(props){
@@ -157,9 +157,9 @@ This is Junho's study 밑에 This is test page 가 추가로 뜰것이다
 
 
 
-그 이유는 **test.js**를 실행하는 "/test"의 경로 중 "/"가
+그 이유는 **Test.js**를 실행하는 "/test"의 경로 중 "/"가
 
-**home.js**를 실행하는 "/"와 중복되기 때문이다.
+**Home.js**를 실행하는 "/"와 중복되기 때문이다.
 
 
 
@@ -177,4 +177,4 @@ exact 속성은
 
 해당 태그의 path 값이 **다른 경로와 중복되지 않고 완전한 경로로 사용**되게 한다.
 
-즉, 순수하게 "/"의 경로로만 접근해야 설정된 component가 실행된다.
+즉, 순수하게 "/"의 경로로만 접근해야 설정된 컴포넌트가 실행된다.
