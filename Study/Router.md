@@ -8,6 +8,22 @@
 
 
 
+URL에서 path와 qurey string이란?
+
+예를 들어 "http://junhostudy.com/search?page=3" 이라는 url이 있다고 하자
+
+http:// 은 프로토콜을 의미한다.
+
+프로토콜 다음의 junhostudy.com 은 도메인이라고 부르고
+
+도메인 다음에 나오는 / 이후의 'search'를 path 라고 부르고
+
+path 이후의 ? 다음에 나오는 'page=3' 같은 것들을 query string 이라고 부른다.
+
+웹은 url의 path와 query string 을 이용하여 어떤 정보를 불러올지 결정한다.
+
+
+
 라우터를 쓰기 위해서는 react-router-dom을 설치해야한다.
 
 ```react
