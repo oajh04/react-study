@@ -151,9 +151,9 @@ This is Junho's study가 뜰 것이다.
 
 This is Junho's study 밑에 This is test page 가 추가로 뜰것이다
 
-그런데 route의 component는 분명 test.js 파일을 띄우고 싶은데
+그런데 route의 컴포넌트는 분명 Test.js 파일을 띄우고 싶은데
 
-해당 경로에서 home.js 파일도 함께 실행된 결과가 나왔다.
+해당 경로에서 Home.js 파일도 함께 실행된 결과가 나왔다.
 
 
 
@@ -163,7 +163,7 @@ This is Junho's study 밑에 This is test page 가 추가로 뜰것이다
 
 
 
-이러한 중복을 막기 위해서 home.js route가 설정된 태그에 다음과 같은 코드로 바꾼다.
+이러한 중복을 막기 위해서 Home.js route가 설정된 태그에 다음과 같은 코드로 바꾼다.
 
 ```react
 /* src/App.js */
