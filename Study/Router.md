@@ -55,7 +55,7 @@ src 디렉토리 안으로 component 라는 디렉토를 만든 후 home.js 와 
 ```react
 /* src/component/home.js */
 
-import React, { Component } from 'react';
+import React from 'react';
 
 const home = () => {
     return (
@@ -75,7 +75,7 @@ test.js
 ```react
 /* src/component/test.js */
 
-import React, { Component } from 'react';
+import React from 'react';
 
 const test = () => {
     return (
